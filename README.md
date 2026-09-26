@@ -10,9 +10,9 @@ No matter who you are, you can use this. It uses first-principles logic to help 
 
 ### What you get
 
-A skill is a set of instructions you give an AI so it does a task the same way every time. Whether it's your first skill or your fiftieth, skill-blueprint starts by asking whether your task is something you'll repeat, or something you'd be better off just asking for in your own words, the way you normally would.
+A skill is a set of instructions you give an AI so it does a task the same way every time. Whether it's your first skill or your fiftieth, skill-blueprint asks you a few questions and drafts a blueprint with you, starting with whether your task is one skill or several.
 
-If it does need a skill, skill-blueprint catches the gaps that make skills unreliable, like a vague trigger or no clear point where the job is finished. It keeps the skill short so the model has room to use its own reasoning, and hands you a plain-English summary to paste into Claude's or ChatGPT's skill builder. You spend less time fixing the skill after you've made it.
+It catches the gaps that make skills unreliable, like a vague trigger, no point where it stops to check with you, or no clear point where the job is finished. It keeps the skill as short as the job allows so the model has room to use its own reasoning, and hands you a plain-English blueprint to build in whichever AI tool you use. You spend less time fixing the skill after you've made it.
 
 ### Why it works this way
 
@@ -21,6 +21,7 @@ Most skills go wrong by being too long or too strict. skill-blueprint starts fro
 - It only knows what you show it.
 - It guesses wherever you leave a gap.
 - It forgets between chats.
+- It leans towards acting, so it won't pause to check with you unless told where.
 - It stops when it thinks it's done.
 
 The seven parts below work around those limits. The skill gives the model reasons and questions rather than rigid rules, so it can use its own reasoning on cases the skill didn't list.
@@ -37,7 +38,7 @@ The seven parts below work around those limits. The skill gives the model reason
 
 ### How to use it
 
-In Claude, zip the `skill-blueprint` folder and upload it as a skill. In ChatGPT, paste the contents of `SKILL.md` into a project or custom GPT's instructions. Then tell it what you want to build or check.
+In Claude, zip the `skill-blueprint` folder and upload it as a skill. In ChatGPT, add it as a skill if your plan has them, or paste the contents of `SKILL.md` into a project or custom GPT's instructions. If your tool doesn't have skills yet, like Copilot for many people, paste it into an agent's instructions or keep it as a Word file to attach when you need it. Then tell it what you want to build or check.
 
 ---
 
