@@ -1,96 +1,78 @@
 ---
 name: skill-blueprint
-description: Builds the foundations for a simple skill before you make it in Claude or ChatGPT, starting with whether you need one at all. Use when someone wants to make or check a skill.
+description: Builds the foundations for a simple skill before you make it in Claude or ChatGPT. Use when someone wants to make or check a skill.
 ---
 
 ## Objective
 
-Get the logic of a simple skill right before anyone builds it in Claude or ChatGPT. Decide first whether the task needs a skill, then make sure each skill has the seven parts below and nothing else. New skills and audits follow the same steps.
+Produce a blueprint for a simple skill, worked out with the user and ready to build in Claude or ChatGPT. New skills and audits follow the same steps. Check every question, draft line and fix against this objective: does it help the user end up with the simplest skill that does the job?
 
 ## Steps
 
-1. **Ask, in two rounds at most.**
-   - Round 1: "What are you trying to get done, how often do you do it, and how much explaining does it take to get it right?" For an audit, ask for the skill too. Leave out anything the conversation already answers.
-   - Round 2: up to three follow-up questions in one message, on the gaps that would change the skill most, each with your recommended answer so the user can reply "yes to all".
-   - After round 2, stop asking and list your best guesses for anything missing as assumptions the user can strike out.
-2. **Route.** Use "Which it should be" to decide. Stop and ask: "This looks like [outcome] because [reason]. Go with that, or change it?" If it's custom instructions, write the line and stop. If it only needs prompting, say so and stop.
-3. **Draft or read.** For a new skill, draft the seven parts from the user's answers and your assumptions. For an audit, read the skill.
-4. **Check and fix.** Check against the seven parts, "Can it be followed?" and the writing rules. Fix what fails.
-5. **Ask for approval.** Show the result in chat and ask: "Approve as is, change something, or drop it?" (for an audit: "Which fixes stand?"). Make or change a skill only after the user approves.
+Ask two rounds of questions at most. At every question or stop, give your recommendation and why, so the user can simply agree or change it. Draft early, so the user reacts to something concrete instead of answering questions in the abstract.
 
-## Which it should be
+1. **Understand the task.** Ask one open question that finds out what the user is trying to get done, what a good result looks like to them, and which AI tool they use. For an audit, ask for the skill. Skip anything the conversation already answers.
+2. **Decide the shape.** One skill or several, and steps, a standard or both (see "Two kinds of skill"). Decide on the objective, not the inputs: one objective is one skill however varied the inputs, and two objectives mean two skills. If the steps change for most inputs, check for a hidden second objective. Recommend a shape, then stop and confirm.
+3. **Draft the blueprint.** Draft all seven parts from what you have, and mark each guess as an assumption. For an audit, mark each part present or missing.
+4. **Fill the gaps.** In one message, ask up to three questions on the assumptions that would change the skill most. This is the last round; anything still unknown stays as a listed assumption.
+5. **Check, then ask for approval.** Check the blueprint against "What a good skill looks like" and fix what fails. Show it and ask: "Approve as is, change something, or drop it?" (audit: "Which fixes stand?"). Make or change a skill only after the user approves.
 
-Every task gets exactly one of these.
+## What a good skill looks like
 
-| If the task... | It should be |
-|---|---|
-| isn't repeated, or changes each time | prompting, in the user's own words as they normally would |
-| applies to everything the user does, like tone, format or who they are | custom instructions |
-| repeats, with one objective | one skill, however short |
-| repeats, with more than one objective or steps that change with the input | one skill per objective |
+### Two kinds of skill
 
-## The seven parts
+- **Steps:** a process in order, like turning any transcript into the same summary.
+- **Standard:** rules the result must meet, in any order, like writing in someone's voice. In a standard skill, the standard is the Method; in a steps skill, the standard for good goes in Context.
+- Many skills use both: steps that end with a check against a standard.
 
-| Part | Question to ask | Why it matters |
+### The seven parts
+
+"The LLM" means the AI model that will run the skill. Cover all seven. By default, give each part its own subheading. If the user says something matters most, use your judgement (its own subheading, or merged parts), as long as every question below is answered.
+
+| Part | Question to ask | Because the LLM... |
 |---|---|---|
-| Objective | Do one or two sentences say why it exists and what it's solving for? | Claude tests every line against this, and falls back on it when a case isn't covered |
-| Trigger | Does it say what the skill does and the kinds of request that should start it? | Claude sees only this until the skill starts |
-| Input | Does it say what the user must give, when there's enough to start, and what changes for each kind of input? | Where there's a gap, Claude guesses |
-| Method | Does it say what Claude does, either as steps in order with stops for the user, or as the standard the result must meet? | This is the skill; everything else supports it |
-| Context | Does it give only what Claude wouldn't already know, like definitions, the audience and examples? | Claude only knows what's in front of it |
-| Guidelines and verification | Does it name the few mistakes that would break the result, each with what to do instead, and how Claude checks its own conclusions? | A few clear checks beat many rules |
-| Output | Does it describe the result and where it goes, give one example, and say what finished means? | Claude stops when it thinks it's done |
+| Objective | Does it say what the skill is solving for, and tell the LLM to check each step and the result against it? | falls back on the goal when a case isn't covered |
+| Trigger | Does it say what the skill does and the kinds of request that should start it? | sees only this until the skill starts |
+| Input | Does it say what the user must give, when there's enough to start, and what changes for each kind of input? A change in how the work is done goes in Method as "if this, then that". | guesses wherever there's a gap |
+| Method | Does it say what the LLM does: steps in order, with a stop ending in a question before anything hard to undo and wherever the judgement is the user's, a standard, or both? | leans towards acting and finishing, so it won't pause unless told where to |
+| Context | Does it give the background the LLM wouldn't already know, like definitions, sources and who the result is for? | only knows what's in front of it |
+| Guidelines and verification | Does it name the few mistakes that would break the result, each with what to do instead, and nudge the LLM to check its conclusions against something (the source, a quote, the user's words) in its own way? | brings a banned thing to mind, and can sound sure while guessing |
+| Output | Does it describe the result and where it goes, give one example that fits the people using it, and say what finished means? | copies examples closely, and stops when it thinks it's done |
 
-## Where things go
-
-- **Variables.** A variable that changes what comes in goes in Input. One that changes how the work is done goes in Method as a short "if this, then that". If it changes most of the steps, it's a second skill.
-- **Standards.** In a standard skill, the standard is the Method. In a steps skill, the standard for good goes in Context. Either way, it lives in one place.
-- **Checkpoints.** Put a stop wherever the user must decide, and end it with a question they can answer.
-- **Verification.** Nudge Claude to ground its conclusions in something (the source, a quote, the user's own words), and let it choose how.
-
-## Room to reason
-
-A skill works best when Claude understands what it's aiming for and can use its judgement. Look for these:
-
-- It says what it's solving for, so Claude can handle cases it doesn't list.
-- Each rule comes with its reason.
-- Checks are written as questions Claude asks itself.
-- When something fails, the objective gets sharper before a new rule gets added.
-
-## Can it be followed?
+### Can it be followed?
 
 Ask of every line:
 
 - Could someone new to the task follow it without asking what it means?
-- Does it contradict another line?
-- Does its example fit the people who will use the skill?
+- Does it repeat or contradict another line?
 
-## Writing rules
+### Writing rules
 
-- **Concise:** keep only sentences that serve the objective and change what Claude would do, and say each thing once.
+- **Briefed:** write it as you'd brief a capable colleague: why each thing matters, the background they need, and the questions to ask to meet the objective. Enough to reason with, and no more, because the LLM applies bare rules rigidly and a reason lets it handle cases the skill didn't list.
+- **Concise:** keep only sentences that serve the objective and change what the LLM would do, and cut preamble. Use as few words as the job needs. About 1,000 is a rough guide, not a limit. Put the key rules at the top and bottom, because the LLM pays least attention to the middle of long text. If background starts to outweigh the instructions, suggest moving it into a reference file and let the user decide.
 - **Precise:** use the one word that best gets the result the objective needs. Precise means the exact word, and usually fewer of them.
-- **Checkable:** start each instruction with a verb, and make instructions and finish lines something Claude can check ("short" becomes "under 100 words"). Leave judgement calls to the objective.
+- **Checkable:** start each instruction with a verb, and make instructions and finish lines something the LLM can check ("short" becomes "under 100 words"). Leave judgement calls to the objective.
 
 ## Guidelines and verification
 
-- If one skill is stretching over two objectives, suggest the split.
+- When changing a skill, the LLM tends to fix one gap with a special-case rule instead of asking what is structurally missing or what should come out. When in doubt, strip out rather than add: sharpen the objective or add a reason before adding a rule, because each extra rule narrows what the LLM will reason about.
 - In an audit, quote the line behind each finding, so the user can see it for themselves.
 
 ## Output
 
-- **New skill:** a plain-English summary in chat, one or two lines per part, for the user to paste into Claude's or ChatGPT's skill builder. Under it, list your assumptions and two or three test requests, each with what a good result looks like.
+- **New skill:** the blueprint in chat, one or two lines per part, ending with how to save it in their tool. If the tool can install skills: "Paste this in and ask it to build and save the skill, or install it as is." If not, say it won't start on its own, and offer it as a Word file to attach when needed, or to paste into an agent's instructions (in Copilot, a lightweight declarative agent). Under it, list your assumptions and two or three test requests, each with what a good result looks like.
 - **Audit:** say what the skill is trying to do, give a five-line summary (what works, what doesn't, what to do next, and why), then list each missing part and each line that fails a check.
 
-Example summary for a new skill:
+Example blueprint, so the LLM matches this shape:
 
-> **Objective:** Turn any meeting transcript into the same one-page summary, so decisions and actions are easy to find.
+> **Objective:** Turn any meeting transcript into the same one-page summary, so decisions and actions are easy to find. Check each item against that aim before including it.
 > **Trigger:** Use when someone shares a meeting transcript and asks for a summary.
 > **Input:** The transcript and who the summary is for. If speakers aren't named, ask who they are.
-> **Method:** Ask who it's for, sort the talk into decisions, actions and open questions, check, then show it.
+> **Method:** Ask who it's for, sort the talk into decisions, actions and open questions, then stop and ask "Anything missing or misheard?" before finalising.
 > **Context:** The one-page format, and what the reader needs from it.
 > **Guidelines and verification:** Instead of guessing an owner, mark it [owner?]. Check each action against the transcript before listing it.
 > **Output:** A one-page summary in chat, finished when every action has an owner or an [owner?] mark.
 
 ## Done when
 
-You're done when the user has agreed the route and approved a summary where every part is present and every line can be followed.
+You're done when the user has agreed the shape and approved a blueprint where all seven parts are covered and every line can be followed.
