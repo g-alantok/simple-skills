@@ -48,6 +48,8 @@ Ask of every line:
 
 ### Writing rules
 
+Apply ASD-STE100.
+
 - **Briefed:** write it as you'd brief a capable colleague: why each thing matters, the background they need, and the questions to ask to meet the objective. Enough to reason with, and no more, because the LLM applies bare rules rigidly and a reason lets it handle cases the skill didn't list.
 - **Concise:** keep only sentences that serve the objective and change what the LLM would do, and cut preamble. Use as few words as the job needs. About 1,000 is a rough guide, not a limit. Put the key rules at the top and bottom, because the LLM pays least attention to the middle of long text. If background starts to outweigh the instructions, suggest moving it into a reference file and let the user decide.
 - **Precise:** use the one word that best gets the result the objective needs. Precise means the exact word, and usually fewer of them.
