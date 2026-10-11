@@ -48,7 +48,7 @@ Ask of every line:
 
 ### Writing rules
 
-Apply ASD-STE100.
+Simplify the language using ASD-STE100 (Simplified Technical English) as a guide, so each line has one meaning the LLM can't misread.
 
 - **Briefed:** write it as you'd brief a capable colleague: why each thing matters, the background they need, and the questions to ask to meet the objective. Enough to reason with, and no more, because the LLM applies bare rules rigidly and a reason lets it handle cases the skill didn't list.
 - **Concise:** keep only sentences that serve the objective and change what the LLM would do, and cut preamble. Use as few words as the job needs. About 1,000 is a rough guide, not a limit. Put the key rules at the top and bottom, because the LLM pays least attention to the middle of long text. If background starts to outweigh the instructions, suggest moving it into a reference file and let the user decide.
@@ -57,7 +57,7 @@ Apply ASD-STE100.
 
 ## Guidelines and verification
 
-- When changing a skill, the LLM tends to fix one gap with a special-case rule instead of asking what is structurally missing or what should come out. When in doubt, strip out rather than add: sharpen the objective or add a reason before adding a rule, because each extra rule narrows what the LLM will reason about.
+- When changing a skill, the LLM tends to fix one gap with a special-case rule instead of asking what is structurally missing or what should come out. When in doubt, strip out rather than add: sharpen the objective or add a reason before adding a rule, because each extra rule narrows what the LLM will reason about. Stripping has its own failure: the LLM cuts what the skill needs to reach its objective, because shorter looks better. Before cutting, name what the user is trying to get to (from step 1) and which parts get them there, then check the cut version still gets them there. That is what "does the job" means in the objective.
 - In an audit, quote the line behind each finding, so the user can see it for themselves.
 
 ## Output
