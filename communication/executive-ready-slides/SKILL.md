@@ -1,6 +1,6 @@
 ---
 name: executive-ready-slides
-description: Builds or checks a slide deck so it tells an executive-ready story: each headline is a full sentence that states its point, the headlines alone tell the story with the bottom line first, and each slide's content and layout prove its headline. Use when someone is making a deck, turning notes or a draft into slides, or wants to check a deck before they share it.
+description: "Builds or checks a slide deck so it tells an executive-ready story: each headline is a full sentence that states its point, the headlines alone tell the story with the bottom line first, and each slide's content and layout prove its headline. Use when someone is making a deck, turning notes or a draft into slides, or wants to check a deck before they share it."
 ---
 
 ## Objective
