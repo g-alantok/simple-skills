@@ -2,6 +2,24 @@
 
 Practical skills for everyday work in Claude and ChatGPT, written in plain English. You install them in the app itself, and each one makes a solid starting point if you later want to turn it into an agent skill.
 
+They're for anyone who uses AI at work, whether you're an engineer writing up a design for review or a manager pitching an idea to leadership.
+
+| Skill | What it does | Folder |
+|---|---|---|
+| [skill-blueprint](#skill-blueprint) | Builds the foundations for a skill before you make it | `meta-skills/` |
+| [executive-ready-slides](#executive-ready-slides) | Turns a deck into a story a busy reader gets from the headlines alone | `communication/` |
+
+## Install
+
+If you use a coding agent such as Claude Code or Cursor, install a skill with one command:
+
+```bash
+npx skills add g-alantok/simple-skills --skill skill-blueprint
+npx skills add g-alantok/simple-skills --skill executive-ready-slides
+```
+
+For the Claude or ChatGPT app, see "How to use it" under each skill.
+
 ## skill-blueprint
 
 Builds the foundations for a skill before you make it in Claude or ChatGPT.
@@ -39,6 +57,22 @@ The seven parts below work around those limits. The skill gives the model reason
 ### How to use it
 
 In Claude, zip the `skill-blueprint` folder and upload it as a skill. In ChatGPT, add it as a skill if your plan has them, or paste the contents of `SKILL.md` into a project or custom GPT's instructions. If your tool doesn't have skills yet, like Copilot for many people, paste it into an agent's instructions or keep it as a Word file to attach when you need it. Then tell it what you want to build or check.
+
+## executive-ready-slides
+
+Builds or checks a slide deck so it tells a story a busy reader gets from the headlines alone, with each slide proving its headline.
+
+### What you get
+
+Most decks have headlines like "Background", "Objective" and "Next steps", which leave the reader to work out the point, and the ask often sits on the last slide. executive-ready-slides agrees the one message with you first, then turns each headline into a full sentence that states the slide's point (management consultants call these action titles). It puts the ask up front, checks the headlines read as one argument, and checks each slide's content and layout back up its headline. You get the deck as headlines with what goes under each, plus the two or three problems that still need your call.
+
+### Why it works this way
+
+An AI writes one word at a time, so its first draft tends to work through the background and reach the point last, in each sentence and across the whole deck. Telling it "put the point first" while it drafts only goes so far. So the skill has it draft first, then check the finished draft in separate passes, and rewrite before you see anything. The checks follow management consulting standards: Barbara Minto's Pyramid Principle and the usual practice for action titles and slide layout.
+
+### How to use it
+
+In Claude, zip the `executive-ready-slides` folder and upload it as a skill. In ChatGPT, add it as a skill if your plan has them, or paste the contents of `SKILL.md` into a project or custom GPT's instructions. Then share your notes, your draft deck or just your idea, and say who it's for.
 
 ---
 
