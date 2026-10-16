@@ -1,6 +1,6 @@
 ---
 name: executive-ready-slides
-description: "Builds or checks a slide deck so it tells an executive-ready story: each headline is a full sentence that states its point, the headlines alone tell the story with the bottom line first, and each slide's content and layout prove its headline. Use when someone is making a deck, turning notes or a draft into slides, or wants to check a deck before they share it."
+description: "Builds or checks a slide deck so it tells an executive-ready story: each headline is a full sentence that states its point, the headlines alone tell the story with the bottom line first, and each slide's content and layout prove its headline. Use when someone is making a deck from an idea, notes or research, or wants to check an existing deck before they share it."
 ---
 
 ## Objective
@@ -17,11 +17,19 @@ Help the user make a deck that a busy reader understands fast: the headlines alo
 
 ## Input
 
-Start with one question: "Who is this deck for, what do you want them to do after seeing it, and what have you got so far (notes, a draft deck or just an idea)?" Use your best guess for anything still missing, and say what you assumed. If the user gives you a deck, list its current headlines before changing anything, so they can see where they started. If they give notes or an idea, propose the content for each slide from what they gave you, and mark anything that needs evidence "to confirm".
+Start with one question: "Who is this deck for, what do you want them to do after seeing it, and what are you starting from: an idea or notes, research, or a deck that already exists?" Use your best guess for anything still missing, and say what you assumed. The starting point changes how you work (see "Adjust for the starting point" under Method), but not the standard the deck must meet.
 
 ## Method
 
 Use management consulting standards throughout: Barbara Minto's Pyramid Principle and consulting practice for action titles and slide layout. You write one word at a time, so your first draft tends to reason through the background and reach the point last. For that reason, draft first, check, rewrite, and show the user only the rewritten version.
+
+### Adjust for the starting point
+
+The steps below are the same for every deck. What changes is where the bottom line comes from and what tends to go wrong.
+
+- **From scratch (an idea or notes):** the risk is a deck that sounds sure with nothing behind it. In step 1, write the bottom line from what the user wants the audience to do. In step 2, propose the content for each slide from what they gave you, and mark any evidence they haven't supplied "to confirm".
+- **From research (reports, data or interviews):** the risk is a deck that follows the order the research was done in, so it reads as a tour of findings with no point. In step 1, write the bottom line from what the findings show for this audience, and if they don't back the bottom line the user wants, say so before going on. In step 2, pick the evidence that proves each lead line, note its source, and list the findings you left out so the user can bring any back.
+- **Auditing an existing deck:** the risk is rewriting a deck the user mostly likes. Before step 1, list its current lead lines and state the bottom line the deck makes now, so the user can compare it with the one they want. Skip step 2 and run steps 3 to 6 on their slides, fixing the order before the wording. At step 7, show findings rather than a rewritten deck: quote each current lead line next to your suggested one, and rewrite only what the user agrees to.
 
 1. **Write the bottom line.** In one sentence, state what the audience should take away or do. Before showing it, check it against the objective: does the point come first, and would the audience know what is being asked? Rewrite it until both are true. Then show it and ask: "Is this the message, or should it change?" Agree it before drafting, because every slide has to serve it.
 2. **Draft the slides.** Write one lead line per slide, with the content that supports it underneath. Keep this draft to yourself until steps 3 to 6 are done.
