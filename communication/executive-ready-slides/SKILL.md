@@ -5,7 +5,7 @@ description: "Builds or checks a slide deck so it tells an executive-ready story
 
 ## Objective
 
-Help the user make a deck that a busy reader understands fast: the headlines alone give the message and the ask, and each slide's content proves its headline at a glance. Busy readers often read only the headlines, so a headline that only names a topic ("Objective", "Background") leaves them to guess the point, and a slide whose content argues something else loses their trust. Check every headline, every slide, every change and the finished deck against this: would the reader get the point and the ask, and believe it?
+Help the user make a deck that a busy reader understands fast and is persuaded by: the headlines alone give the message and the ask, each slide's content proves its headline at a glance, and the headlines in order tell a story the reader wants to follow. Busy readers often read only the headlines, so a headline that only names a topic ("Objective", "Background") leaves them to guess the point, and a slide whose content argues something else loses their trust. Fast isn't enough on its own, because a deck of correct headlines with nothing at stake between them gives the reader no reason to act. Check every headline, every slide, every change and the finished deck against this: would the reader get the point and the ask, believe it, and see why it matters now?
 
 ## Terms
 
@@ -14,6 +14,7 @@ Help the user make a deck that a busy reader understands fast: the headlines alo
 - **Bottom line up front (BLUF):** the point comes first, then the reasons for it.
 - **Horizontal logic:** the lead lines, read alone and in order, tell the whole story.
 - **Vertical logic:** on each slide, the content under the lead line proves that lead line.
+- **Storyline:** the order of the lead lines, so each one raises the question the next one answers. Minto's shape is situation (where things stand), complication (what has changed or gone wrong) and resolution (what to do about it). Bottom line first doesn't kill the story: the first slide gives the resolution, and the slides after it give the situation and complication that make it matter.
 
 ## Input
 
@@ -35,7 +36,7 @@ The steps below are the same for every deck. What changes is where the bottom li
 2. **Draft the slides.** Write one lead line per slide, with the content that supports it underneath. Keep this draft to yourself until steps 3 to 6 are done.
 3. **Check for the bottom line up front.** Do this as a separate pass once the draft is complete, because now the whole draft is in front of you. Read each lead line, and where its point comes at the end, rewrite it so the point comes first. Then read the deck, and if the bottom line first appears near the end, move it to the first or second slide and let the slides after it give the reasons.
 4. **Check each lead line against consulting standards.** Check that each one makes a claim the reader could agree or disagree with, is specific to this situation, uses numbers where the user has them, states a finding rather than an activity ("Costs rose 20%" rather than "We reviewed costs"), and fits in two lines. Rewrite any that fail.
-5. **Check the horizontal logic against the objective.** Read the rewritten lead lines alone and in order, as the audience would. Check that each one follows from the one before, that each makes a different point, and that together they lead to the bottom line. Then ask: if the reader saw only these headlines, would they get the point and the ask? Rewrite until the answer is yes, or note the gap that remains.
+5. **Check the horizontal logic against the objective.** Read the rewritten lead lines alone and in order, as the audience would. Check that each one follows from the one before, that each makes a different point, and that together they lead to the bottom line. Then check the storyline: does each lead line raise the question the next one answers, and does the deck show what is at stake if the reader does nothing? Where the lead lines read as a list of separate findings, reorder them or add the complication that links them. Then ask: if the reader saw only these headlines, would they get the point and the ask, and want to act? Rewrite until the answer is yes, or note the gap that remains.
 6. **Check the vertical logic and layout of each slide.** For each slide, check that the content proves the lead line at the strength it claims, that the slide carries one message, and that the layout shows the point first: the strongest evidence nearest the lead line, a chart or table labelled with what it shows, the source noted, and only the text the point needs. Where a lead line now claims more than its content shows, either soften the lead line or add the evidence needed. Move content that supports a different point to the slide it belongs on.
 7. **Stop and ask.** Show the rewritten deck, then the two or three problems that still need the user's call, each with a suggested fix. Ask: "Take these fixes, change them, or leave them?" Apply only what the user agrees to, then rerun steps 3 to 6 on the slides that changed before showing them again.
 
@@ -46,6 +47,7 @@ The steps below are the same for every deck. What changes is where the bottom li
 | A label as a headline ("Objective", "Next steps") | Write the full sentence the slide proves ("We need approval by June to start the pilot") |
 | Building up to the point at the end | Put the point first and the reasons after it |
 | A vague lead line ("Some considerations around costs") | State the claim, and mark it "to confirm" if the evidence isn't there yet |
+| Lead lines that read as a list of separate findings | Order them so each raises the question the next one answers, and name what is at stake |
 | Content that argues a different point from its lead line | Move it to the slide it supports, or cut it |
 | Choosing fonts, colours or branding | Leave branding to the user's template, and arrange the content so the point is seen first |
 
@@ -77,4 +79,4 @@ Read together, the lead lines also work as the deck's executive summary.
 
 ## Done when
 
-The user has agreed the bottom line and the deck, every lead line is a full sentence with its point first that meets the step 4 standards, the lead lines read alone give the message and the ask, and each slide's content proves its lead line.
+The user has agreed the bottom line and the deck, every lead line is a full sentence with its point first that meets the step 4 standards, the lead lines read alone give the message and the ask and tell a story with something at stake, and each slide's content proves its lead line.
