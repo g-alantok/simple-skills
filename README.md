@@ -64,7 +64,7 @@ Builds or checks a slide deck so it tells a story a busy reader gets from the he
 
 ### What you get
 
-Most decks have headlines like "Background", "Objective" and "Next steps", which leave the reader to work out the point, and the ask often sits on the last slide. executive-ready-slides agrees the one message with you first, then turns each headline into a full sentence that states the slide's point (management consultants call these action titles). It puts the ask up front, checks the headlines read as one argument, and checks each slide's content and layout back up its headline. You get the deck as headlines with what goes under each, plus the two or three problems that still need your call.
+Most decks have headlines like "Background", "Objective" and "Next steps", which leave the reader to work out the point, and the ask often sits on the last slide. executive-ready-slides agrees the one message with you first, then turns each headline into a full sentence that states the slide's point (management consultants call these action titles). It puts the ask up front, checks the headlines read as one argument, and checks each slide's content and layout back up its headline. You get the deck as headlines with what goes under each, plus the two or three problems that still need your call. When the story needs testing, it strips the deck back to a dot-dash (the headlines as dots, the evidence under each as dashes) and checks the argument holds, either itself or through a sub-agent that hasn't seen the drafting.
 
 ### Why it works this way
 
@@ -72,7 +72,7 @@ An AI writes one word at a time, so its first draft tends to work through the ba
 
 ### How to use it
 
-In Claude, zip the `executive-ready-slides` folder and upload it as a skill. In ChatGPT, add it as a skill if your plan has them, or paste the contents of `SKILL.md` into a project or custom GPT's instructions. Then share your notes, your draft deck or just your idea, and say who it's for.
+In Claude, zip the `executive-ready-slides` folder and upload it as a skill. In ChatGPT, add it as a skill if your plan has them, or paste the contents of `SKILL.md` into a project or custom GPT's instructions and add `references/dot-dash-check.md` as a knowledge file. Then share your notes, your draft deck or just your idea, and say who it's for.
 
 ---
 

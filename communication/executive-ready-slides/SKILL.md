@@ -1,6 +1,6 @@
 ---
 name: executive-ready-slides
-description: "Builds or checks a slide deck so a busy reader gets the point, the ask and the story from the headlines alone, with the bottom line first and each slide proving its headline. Use when someone is making a deck from an idea, notes or research, or wants to check an existing deck before they share it."
+description: "Builds or checks a slide deck so a busy reader gets the point, the ask and the story from the headlines alone, with the bottom line first and each slide proving its headline. Use when someone is making a deck from an idea, notes, research or a storyline, or wants to check an existing deck before they share it."
 ---
 
 ## Objective
@@ -18,7 +18,7 @@ Help the user make a deck that a busy reader understands fast and is persuaded b
 
 ## Input
 
-Start with one question: "Who is this deck for, what do you want them to do after seeing it, and what are you starting from: an idea or notes, research, or a deck that already exists?" Use your best guess for anything still missing, and say what you assumed. The starting point changes how you work (see "Adjust for the starting point" under Method), but not the standard the deck must meet.
+Start with one question: "Who is this deck for, what do you want them to do after seeing it, and what are you starting from: an idea or notes, research, a storyline, or a deck that already exists?" Use your best guess for anything still missing, and say what you assumed. The starting point changes how you work (see "Adjust for the starting point" under Method), but not the standard the deck must meet.
 
 ## Method
 
@@ -31,6 +31,20 @@ The steps below suit every deck. What changes is where the bottom line comes fro
 - **From scratch (an idea or notes):** the risk is a deck that sounds sure with nothing behind it. In step 2, propose the content for each slide from what they gave you, and mark any evidence they haven't supplied "to confirm".
 - **From research (reports, data or interviews):** the risk is a deck that follows the order the research was done in, so it reads as a tour of findings with no point. In step 1, write the bottom line from what the findings show for this audience, and if the findings don't back the bottom line the user wants, say so before going on. In step 2, pick the evidence that proves each lead line, note its source, and list the findings you left out so the user can bring any back.
 - **Auditing an existing deck:** the risk is rewriting a deck the user mostly likes. Before step 1, list its current lead lines and state the bottom line the deck makes now, so the user can compare it with the one they want. Skip step 2 and run steps 3 to 6 on their slides, fixing the order before the wording. At step 7, show findings rather than a rewritten deck: quote each current lead line next to your suggested one, and rewrite only what the user agrees to.
+- **From a storyline (dots and dashes, or any outline the user has agreed):** the risk is redoing an argument that is already settled. In step 1, take its main point (the governing thought) as the bottom line and check it rather than rewrite it. In step 2, turn each dot into a lead line and its dashes into slide content, keep the dot numbers, and carry "Evidence needed" over as "to confirm".
+
+### When to run a dot-dash check
+
+A dot-dash strips a deck back to its lead lines (dots) and the evidence under each (dashes), so you can see the argument without the layout. Open references/dot-dash-check.md and run it:
+- before step 2, when starting from notes or research and the deck asks for a decision or runs past five slides
+- at the start of an audit, to see the argument the deck makes now
+- when step 5 fails, because the lead lines read as a list of findings or step 3 had to move the bottom line
+- when step 6 finds a slide whose content doesn't prove its lead line, or proves a different point
+- after any reorder or change to the bottom line
+
+If your tool can start a sub-agent, give it the bottom line, the lead lines, the slide content and references/dot-dash-check.md, but not the notes or this conversation, and ask it to run the check and report the breaks. A sub-agent starts with only what you hand it, so pass it the file or paste its text. A reader who hasn't seen the drafting can't fill a gap with what the author meant, so it catches gaps you would read past. Otherwise, run the check yourself.
+
+Skip it for a deck of three slides or fewer. If the user brings an agreed storyline, run the check once instead of rebuilding it.
 
 1. **Write the bottom line.** In one sentence, state what the audience should take away or do. Before showing it, check it against the objective: does the point come first, and would the audience know what is being asked? Rewrite it until both are true. Then show it and ask: "Is this the message, or should it change?" Agree it before drafting, because every slide has to serve it.
 2. **Draft the slides.** Write one lead line per slide, with the content that supports it underneath. Keep this draft to yourself until steps 3 to 6 are done.
