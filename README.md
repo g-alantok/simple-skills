@@ -1,4 +1,13 @@
-# Simple skills
+# Simple skills (moved)
+
+These skills now live in two repos:
+
+- [knowledge-work](https://github.com/g-alantok/knowledge-work): dot-dash and executive-ready-slides
+- [context-engineering](https://github.com/g-alantok/context-engineering): skill-blueprint
+
+This repo is archived and won't be updated.
+
+---
 
 Practical skills for everyday work in Claude and ChatGPT, written in plain English. You install them in the app itself, and each one makes a solid starting point if you later want to turn it into an agent skill.
 
