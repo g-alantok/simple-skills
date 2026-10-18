@@ -7,7 +7,8 @@ They're for anyone who uses AI at work, whether you're an engineer writing up a 
 | Skill | What it does | Folder |
 |---|---|---|
 | [skill-blueprint](#skill-blueprint) | Builds the foundations for a skill before you make it | `meta-skills/` |
-| [executive-ready-slides](#executive-ready-slides) | Turns a deck into a story a busy reader gets from the headlines alone | `communication/` |
+| [dot-dash](#dot-dash) | Builds the storyline behind a deck or report so a decision-maker acts on it | `knowledge-work/` |
+| [executive-ready-slides](#executive-ready-slides) | Turns a deck into a story a busy reader gets from the headlines alone | `knowledge-work/` |
 
 ## Install
 
@@ -15,6 +16,7 @@ If you use a coding agent such as Claude Code or Cursor, install a skill with on
 
 ```bash
 npx skills add g-alantok/simple-skills --skill skill-blueprint
+npx skills add g-alantok/simple-skills --skill dot-dash
 npx skills add g-alantok/simple-skills --skill executive-ready-slides
 ```
 
@@ -57,6 +59,22 @@ The seven parts below work around those limits. The skill gives the model reason
 ### How to use it
 
 In Claude, zip the `skill-blueprint` folder and upload it as a skill. In ChatGPT, add it as a skill if your plan has them, or paste the contents of `SKILL.md` into a project or custom GPT's instructions. If your tool doesn't have skills yet, like Copilot for many people, paste it into an agent's instructions or keep it as a Word file to attach when you need it. Then tell it what you want to build or check.
+
+## dot-dash
+
+Builds or checks the storyline behind a deck, report or briefing, so a decision-maker can follow it and act on it.
+
+### What you get
+
+Most decks are built slide by slide, so they read as a tour of findings with the point somewhere near the end. dot-dash plans the argument in text first, the way management consultants do. Dots are the claims, each a full sentence that will become a slide's headline, and dashes are the evidence under each. It frames the story with SPQA (situation, problem, question, answer), builds it as a Minto pyramid with the main point on top, then tests that the dots alone tell the story and that each one is backed by its evidence. You get the storyline in chat, plus the two or three breaks in the argument that need your call.
+
+### Why it works this way
+
+Moving a dot takes seconds and moving a slide takes much longer, so the argument is cheapest to fix before anything is designed. The order of the story depends on what you need from the audience: approval, a choice, action, agreement or an escalation. The skill picks the order from that, and its reference file holds the other storyline shapes, deck-length rules and a worked example for when SPQA fits badly. Because an AI writes one word at a time and tends to reach the point last, the skill checks for the bottom line up front as its own pass after drafting.
+
+### How to use it
+
+In Claude, zip the `dot-dash` folder and upload it as a skill. In ChatGPT, add it as a skill if your plan has them, or paste the contents of `SKILL.md` into a project or custom GPT's instructions and add `references/storyline-patterns.md` as a knowledge file. Then share your notes or draft and say who it's for and what you need them to do. When the storyline is agreed, executive-ready-slides turns it into slides.
 
 ## executive-ready-slides
 
