@@ -5,9 +5,7 @@ description: Builds or checks a simple skill with the user, for use in Claude, C
 
 ## Objective
 
-<objective>
 Produce a blueprint for a simple skill, worked out with the user and ready to build in Claude, ChatGPT or Copilot. New skills and audits follow the same steps. Check every question, draft line and fix against this objective: does it help the user end up with the simplest skill that does the job?
-</objective>
 
 ## Steps
 
@@ -56,7 +54,7 @@ Simplify the language using ASD-STE100 (Simplified Technical English) as a guide
 - **Concise:** keep only sentences that serve the objective and change what the LLM would do, and cut preamble. Use as few words as the job needs. About 1,000 is a rough guide, not a limit. Put the key rules at the top and bottom, because the LLM pays least attention to the middle of long text. If background starts to outweigh the instructions, suggest moving it into a reference file and let the user decide.
 - **Precise:** use the one word that best gets the result the objective needs. Precise means the exact word, and usually fewer of them.
 - **Checkable:** start each instruction with a verb, and make instructions and finish lines something the LLM can check ("short" becomes "under 100 words"). Leave judgement calls to the objective.
-- **Tagged:** wrap any block the LLM needs to find again or treat differently from instructions, such as the objective it checks against, an example, a template or text the user pastes in, in an XML tag named for what it is (`<objective>`, `<example>`), because the tag shows where the block starts and ends and what it is for. Keep tags in the body, since the name and description can't hold them. List each tag you add with your assumptions, with the reason, so the user can keep or drop it.
+- **Tagged:** use subheadings to organise instructions, and wrap only material that isn't an instruction, such as an example, a template or text the user pastes in, in an XML tag named for what it is (`<example>`). The tag shows the LLM where that block starts and ends and that it's a sample, not an order. Keep tags in the body, since the name and description can't hold them. List each tag you add with your assumptions, with the reason, so the user can keep or drop it.
 
 ## Guidelines and verification
 
