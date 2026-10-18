@@ -70,6 +70,8 @@ Before calling a slide finished, quote its lead line and point to the content th
 
 The deck in chat: each slide's lead line, then its content and layout in a few short lines, with the bottom line on the first slide, like this:
 
+<example>
+
 > **For:** Leadership team
 > **Bottom line:** Fund a shared customer inbox so replies take one day instead of three.
 >
@@ -87,6 +89,8 @@ The deck in chat: each slide's lead line, then its content and layout in a few s
 >
 > **5. A decision this month gets it running before the end-of-year peak.**
 > Timeline from decision to go-live, with the peak marked.
+
+</example>
 
 Read together, the lead lines also work as the deck's executive summary.
 

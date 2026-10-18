@@ -15,6 +15,8 @@ In a short outline every dot is in view at once, so a gap, a repeat or a wrong o
 
 For an audit, write the deck's current lead lines as dots and its slide content as dashes, without changing them.
 
+<example>
+
 > **Bottom line:** Fund a shared customer inbox so replies take one day instead of three.
 > - Replies take three days because questions arrive in five places and nobody owns them.
 >   - Average days to reply by channel, Jan to Sep (support log)
@@ -23,6 +25,8 @@ For an audit, write the deck's current lead lines as dots and its slide content 
 >   - To confirm: their before-and-after figures
 > - It costs $12,000 a year, less than the overtime we now spend chasing replies.
 >   - Inbox cost against this year's overtime (finance report)
+
+</example>
 
 ## Check the horizontal logic
 

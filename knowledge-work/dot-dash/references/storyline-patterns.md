@@ -39,6 +39,8 @@ Strip test: read one level on its own. The governing thought should stand alone,
 
 ## 5. Worked example: approval deck, answer first
 
+<example>
+
 Governing thought: We should invest $1.8M in automated claims triage to cut processing time by 60% and pay back within 14 months.
 
 1. Claims take 14 days on average, well above the industry benchmark of five.
@@ -63,5 +65,7 @@ Governing thought: We should invest $1.8M in automated claims triage to cut proc
    - Accuracy shortfall: 90 days of running both processes, with manual override
 8. Approving today lets the programme start in Q2.
    - First gate review at week 8, steering committee monthly
+
+</example>
 
 Eight dots make the body. With a front page, executive summary and appendix, the deck runs to about 12 slides, and the dots alone tell the story. The figures are illustrative.

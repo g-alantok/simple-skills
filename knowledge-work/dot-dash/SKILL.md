@@ -61,6 +61,8 @@ Before reporting a break, quote the dot it rests on. Before calling a dot suppor
 
 The storyline in chat, in this shape:
 
+<example>
+
 > **Audience:** University compliance committee
 > **Decision:** Approve a three-month AI pilot
 > **Order:** Answer first, risk emphasis, because this committee approves change once the risk is contained
@@ -79,6 +81,8 @@ The storyline in chat, in this shape:
 > **2.1** The current process runs alongside the pilot, so the return is never at risk.
 >
 > **3. Three months covers one full cycle, so the committee will have a clear result by June.**
+
+</example>
 
 Keep each dot's number when dots move, and give new dots new numbers, so changes can be traced into the deck. If the user asks to save the storyline, save it as dot-dash.md in the same shape. When the user is ready for slides, hand over like this: the governing thought becomes the bottom line, key lines become sections or executive summary points, dots become lead lines, dashes become slide content, and "Evidence needed" becomes "to confirm".
 
