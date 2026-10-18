@@ -1,6 +1,6 @@
 ---
 name: dot-dash
-description: Builds or checks a storyline as dots (full-sentence claims) and dashes (the evidence under each), as an SPQA pyramid that moves a decision-maker to act, with consulting tests for horizontal and vertical logic. Use to storyboard a deck, report or briefing, or to check that an argument holds before anyone builds slides.
+description: Builds or checks a storyline as an SPQA pyramid of dots and dashes, so a decision-maker can follow it and act.
 ---
 
 ## Objective

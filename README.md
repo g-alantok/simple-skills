@@ -20,11 +20,11 @@ npx skills add g-alantok/simple-skills --skill dot-dash
 npx skills add g-alantok/simple-skills --skill executive-ready-slides
 ```
 
-For the Claude or ChatGPT app, see "How to use it" under each skill.
+For the Claude, ChatGPT or Copilot app, see "How to use it" under each skill.
 
 ## skill-blueprint
 
-Builds the foundations for a skill before you make it in Claude or ChatGPT.
+Builds the foundations for a skill before you make it in Claude, ChatGPT or Copilot.
 
 No matter who you are, you can use this. It uses first-principles logic to help you cover all the key aspects a model needs to understand your skill.
 
@@ -58,7 +58,7 @@ The seven parts below work around those limits. The skill gives the model reason
 
 ### How to use it
 
-In Claude, zip the `skill-blueprint` folder and upload it as a skill. In ChatGPT, add it as a skill if your plan has them, or paste the contents of `SKILL.md` into a project or custom GPT's instructions. If your tool doesn't have skills yet, like Copilot for many people, paste it into an agent's instructions or keep it as a Word file to attach when you need it. Then tell it what you want to build or check.
+In Claude, zip the `skill-blueprint` folder and upload it as a skill. ChatGPT and Copilot Cowork take the same folder as a skill. If your tool doesn't have skills yet, paste the contents of `SKILL.md` into an agent's or project's instructions. Then tell it what you want to build or check.
 
 ## dot-dash
 
@@ -74,7 +74,7 @@ Moving a dot takes seconds and moving a slide takes much longer, so the argument
 
 ### How to use it
 
-In Claude, zip the `dot-dash` folder and upload it as a skill. In ChatGPT, add it as a skill if your plan has them, or paste the contents of `SKILL.md` into a project or custom GPT's instructions and add `references/storyline-patterns.md` as a knowledge file. Then share your notes or draft and say who it's for and what you need them to do. When the storyline is agreed, executive-ready-slides turns it into slides.
+In Claude, zip the `dot-dash` folder and upload it as a skill. ChatGPT and Copilot Cowork take the same folder as a skill. If your tool doesn't have skills yet, paste the contents of `SKILL.md` into an agent's or project's instructions and add `references/storyline-patterns.md` as a file. Then share your notes or draft and say who it's for and what you need them to do. When the storyline is agreed, executive-ready-slides turns it into slides.
 
 ## executive-ready-slides
 
@@ -90,7 +90,7 @@ An AI writes one word at a time, so its first draft tends to work through the ba
 
 ### How to use it
 
-In Claude, zip the `executive-ready-slides` folder and upload it as a skill. In ChatGPT, add it as a skill if your plan has them, or paste the contents of `SKILL.md` into a project or custom GPT's instructions and add `references/dot-dash-check.md` as a knowledge file. Then share your notes, your draft deck or just your idea, and say who it's for.
+In Claude, zip the `executive-ready-slides` folder and upload it as a skill. ChatGPT and Copilot Cowork take the same folder as a skill. If your tool doesn't have skills yet, paste the contents of `SKILL.md` into an agent's or project's instructions and add `references/dot-dash-check.md` as a file. Then share your notes, your draft deck or just your idea, and say who it's for.
 
 ---
 

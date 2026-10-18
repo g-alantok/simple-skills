@@ -1,6 +1,6 @@
 ---
 name: executive-ready-slides
-description: "Builds or checks a slide deck so a busy reader gets the point, the ask and the story from the headlines alone, with the bottom line first and each slide proving its headline. Use when someone is making a deck from an idea, notes, research or a storyline, or wants to check an existing deck before they share it."
+description: Builds or checks a slide deck so a busy reader gets the point and the ask from the headlines alone.
 ---
 
 ## Objective
