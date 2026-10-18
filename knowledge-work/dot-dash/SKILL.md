@@ -17,6 +17,7 @@ The storyline is the argument. Slides, reports and briefings are only how it is 
 - **Key line:** one of the three to five reasons or steps directly under the governing thought. In a deck, a section or a core slide.
 - **Dot:** one claim, written as a full sentence that states the point. In a deck, one dot becomes one slide's lead line (action title).
 - **Dash:** the evidence or reasoning under a dot, with its source. In a deck, the slide content.
+- **Pyramid:** the governing thought sits on top, and each layer below supports the one above (Minto's Pyramid Principle).
 - **SPQA:** Minto's situation, complication, question, answer, with the complication framed as the problem.
 - **Horizontal logic:** the dots, read alone and in order, tell the whole story.
 - **Vertical logic:** each dot's dashes prove it at the strength it claims.
@@ -52,6 +53,7 @@ Open references/storyline-patterns.md when choosing the order, when SPQA fits ba
 | Treating the user's claim as proven | Label it "Proposed claim" until a dash supports it |
 | Reporting every check | Report only the breaks that change the argument |
 | Designing slides or their layout | Stop at the storyline and hand over to executive-ready-slides |
+| Re-diagnosing the whole problem | Turn a big gap into one question for the user |
 
 Before reporting a break, quote the dot it rests on. Before calling a dot supported, point to the dash that supports it.
 
